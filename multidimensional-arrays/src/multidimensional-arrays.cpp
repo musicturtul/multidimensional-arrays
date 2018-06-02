@@ -10,6 +10,20 @@
 using namespace std;
 
 int main() {
-	cout << "!!!Hello World!!!" << endl; // prints !!!Hello World!!!
+	string animals[2][3] = {
+			{"fox", "dog", "squirrel"},
+			{"panda", "rabbit", "giraffe"}
+	};
+
+	for (int i = 0; i < 2; i++) {
+		for (int j = 0; j < 3; j++){
+			cout << animals[i][j] << flush;
+			if (j<2) {
+				cout << ", " << flush;
+			}
+		}
+		cout << endl;
+	}
+
 	return 0;
 }
